@@ -1,0 +1,535 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+  }
+  
+  :root {
+    --main-text-color: rgb(236, 228, 211);
+    --spacify-text-color: #d88200;
+    --rest-text-color: rgb(37, 24, 10);
+  }
+  
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background-image: url("https://img.freepik.com/free-photo/freshly-baked-gourmet-pizza-on-rustic-wooden-table-generated-by-ai_188544-25969.jpg?w=1380&t=st=1702124183~exp=1702124783~hmac=74024cdc0cb9f389fecab299386333f1ff4731dd0774610a28e312f200e0bf92");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1;
+    height: 1;
+    overflow: hidden;
+  }
+  
+  .spacify-text {
+    color: var(--spacify-text-color);
+  }
+  
+  h2, h3 {
+    margin: 0 20px;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .header-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    height: 4em;
+    width: 100%;
+    color: var(--main-text-color);
+    padding: 1em 0;
+  }
+  
+  .header-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2.5em;
+    flex-grow: 2;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #button {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .button {
+    width: 14em;
+    height: 4em;
+    background-color: var(--spacify-text-color);
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 15px;
+    color: var(--main-text-color);
+  }
+  
+  .button:hover {
+    background: rgb(215, 176, 22);
+    background: -webkit-radial-gradient(circle, rgb(215, 176, 22) 35%, rgb(224, 73, 11) 100%);
+    border: solid rgb(214, 84, 24);
+    cursor: pointer;
+  }
+  
+  .title {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title-text, .title-text span {
+    font-size: 100px;
+    font-family: Trattatello, fantasy;
+    letter-spacing: 2px;
+  }
+  
+  #main {
+    position: relative;
+    margin-top: 100;
+    padding-bottom: 10rem;
+  }
+  
+  .table {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .box {
+    color: rgb(231, 228, 228);
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 20vw;
+    flex-shrink: 0;
+    
+    border-radius: 50%;
+    background: rgb(215, 176, 22);
+    background: -webkit-radial-gradient(circle, rgb(215, 176, 22) 35%, rgb(224, 73, 11) 100%);
+  }
+  
+  .werbung {
+    color: rgb(212, 112, 112);
+  }
+  
+  .food {
+    font-size: 2rem;
+    font-family: Snell Roundhand, cursive;
+  }
+  
+  .img {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  article.child-of-nth {
+    opacity: 0;
+  }
+  
+  .beschreib {
+    margin: 50px 0;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 26px;
+  }
+  
+  .beschreib p, .beschreib span {
+    color: var(--rest-text-color);
+  }
+  
+  .section {
+    display: flex;
+    gap: 30px;
+    margin: 0 50px;
+    justify-content: center;
+  }
+  
+  .section p {
+    color: var(--rest-text-color);
+  }
+  
+  .kuche {
+    display: flex;
+    width: 70%;
+    gap: 80px;
+  }
+  
+  .kuche-info {
+    width: 50%;
+    font-size: 1.4rem;
+    flex-grow: 1;
+  }
+  
+  .kuche-info p {
+    margin-bottom: 100px;
+  }
+  
+  .kuche-icon {
+    border-radius: 200px 200px 0 0;
+    flex-grow: 1;
+  }
+  
+  .chefs-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 66px;
+  }
+  
+  .chefs-title::after {
+    content: "";
+    width: 352px;
+    border: 2px solid black;
+  }
+  
+  .chefs-title::before {
+    content: "";
+    width: 352px;
+    border: 2px solid black;
+  }
+  
+  .chefs-list {
+    width: 80%;
+    margin: 30 auto;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .chef-card {
+    display: flex;
+    gap: 10px;
+    font-size: 22px;
+  }
+  
+  .chef-photo {
+    width: 300px;
+    height: 450px;
+    border-radius: 4px 4px 4px 240px;
+    box-shadow: -14px 10px 0px 0px blanchedalmond, -14px 10px 3px 1px var(--spacify-text-color);
+  }
+  
+  .chefs-section {
+    margin: 0 auto;
+  }
+  
+  .chefs-item {
+    flex-grow: 1;
+  }
+  .qualitat-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 66px;
+
+
+  }
+  
+  
+  .backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .modal {
+    position: relative;
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    max-height: 880px;
+    padding: 128px;
+    background-color: rgb(248, 213, 161);
+    border-radius: 32px;
+    overflow-y: auto;
+  }
+  
+  .modal-btn-close {
+    position: absolute;
+    top: 40;
+    right: 40;
+  }
+  
+  .reserve-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-input {
+    padding: 16px 42px;
+    width: 100%;
+    border: 1px solid rgb(122, 109, 36);
+    border-radius: 8px;
+    background-color: transparent;
+  }
+  
+  .form-lebel {
+    display: block;
+  }
+  
+  .form-input:focus {
+    border-color: var(--spacify-text-color);
+    outline: none;
+  }
+  
+  .form-field {
+    margin-bottom: 32px;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin: 40px;
+  }
+  
+  .button-reserve {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .cards{
+    display: flex;
+    justify-content: center;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    width: 349px;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    background-color: #ecca7f9a;
+    padding: 10px 10px;
+    text-align: center;
+    gap: 1rem;
+  }
+  .cards-container{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 2rem;
+    gap: 0.3rem
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+  }
+  .footer {
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    width: 100%;
+    background: rgb(238, 186, 138);
+  }
+  .footer-container{
+    display: flex;
+    width: 80%;
+  }
+  .footer-nav{
+    display: flex;
+    flex-basis: 50%;
+  }
+  .footer-menu{
+    list-style: none;
+    flex-grow: 1;
+  }
+  .footer-address{
+    display: flex;
+    flex-basis:50%;
+  }
+  .footer-logo{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .address-link{
+    flex-grow: 1;
+  }
+  .header_burger{
+    width: 40px;
+    height: 28px;
+    position: relative;
+    display: none;
+  }
+  .burger_line{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+  .burger_line_first{
+    top: 0;
+  }
+  .burger_line_second{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .burger_line_third{
+    bottom:0;
+  }
+  .header_nav-close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    z-index: 7;
+  }
+  .header_nav-close-line{
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  .header_nav-close-line:first-child{
+    transform: rotate(45deg);
+    
+  }
+  .header_nav-close-line:last-child{
+    transform: rotate(-45deg);
+  }
+  /* Media */
+  @media  screen and (max-width: 1200px){
+    .header-conteiner{
+      display: block;
+    }
+    #open-modal{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto 100px;
+    font-size: 150%;
+    }
+    .info{
+      display: none;
+    }
+    .kuche{
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center
+    }
+    .chefs-list{
+      flex-direction: column;
+    }
+    .chefs-title::after, .chefs-title::before{
+      width: 252px;
+    }
+  }
+ 
+  @media  screen and (max-width: 767px){
+    .title-text{
+      font-size: 70px;
+    }
+    .bg{
+      height: auto;
+    }
+    #open-modal{
+      margin: 0 auto 50px;
+      font-size: 70%;
+    }
+    .header_burger{
+      display: block;
+    }
+    .header-nav{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      opacity: 85%;
+      background-color: black;
+      z-index: 6;
+      padding: 75px;
+      transform: translateX(100%);
+      transition: .2s all;
+    }
+    .header-nav-active{
+      transform: translateX(0);
+    }
+    .header-menu{
+      display: flex;
+      flex-direction: column;
+    }
+    .header-item{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    .header-item:last-child{
+      margin-bottom: 0;
+    }
+  }
+  
